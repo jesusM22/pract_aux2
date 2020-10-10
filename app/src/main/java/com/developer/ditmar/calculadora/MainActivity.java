@@ -1,11 +1,11 @@
 package com.developer.ditmar.calculadora;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     TextView inputlabel;
@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         cad = "";
         loadComponets();
-        /*String cad = "2+4*(3+1)+(3+10.5)+(2*1)+(10-5)*(2^2)+(3/4)";
+        /*String cad = "cos2";
         Calculadora calc = new Calculadora(cad);
         String result = calc.solve();
         Log.d("RESULT=>", result);*/
@@ -52,7 +52,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 R.id.button13,
                 R.id.button14,R.id.button15,
                 R.id.button19, R.id.button20,
-                R.id.button21
+                R.id.button21,  R.id.buttoncos,
+                R.id.buttonsin,R.id.buttontan,
+                R.id.buttonlog,R.id.buttonln,
+                R.id.buttonexp,R.id.buttonsqrt,
+
         };
         for (int i = 0; i < lista.length; i++) {
             Button btn = findViewById(lista[i]);
